@@ -3,73 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senior Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jayden Azore | Army Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="edu.html">Education</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="contract.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="imgs/ANVIL-10.png" alt="Profile Photo" class="profile-img">
-            <div>
-                                <h1>
-                                    <span id="typewriter-text" class="highlight"></span>
-                                </h1>
-                                <p class="subtitle">Aspiring Professional | Lifelong Learner | Creative Thinker</p>
-                                <p>Welcome to my senior portfolio! Here you can explore my education, work, and interests. Let's connect and create something amazing together.</p>
-                                <a href="contract.html" class="cta-btn">Contact Me</a>
+    <div id="background"></div>
+
+    <header>
+        <h1>Jayden Azore</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <h2 class="animated-text"></h2>
+    </section>
+
+    <section id="about" class="scroll-reveal">
+        <h2>About Me</h2>
+        <p>I am a junior in a coding class, passionate about web development and inspired by the army's discipline and strategic approach. I’m from Guyana, the only English-speaking country in South America. Coding is all about structure, efficiency, and solving complex problems just like the military tackles challenges. I enjoy sports, video games, and military history.</p>
+    </section>
+
+    <section id="projects" class="scroll-reveal">
+        <h2>Projects</h2>
+        <div class="project" onclick="toggleDetails(this)">
+            <h3>Fank</h3>
+            <p class="description">A project we worked on during a coding competition.</p>
+            <div class="details">
+                <a href="https://github.com/Jayyy-Fths/Fank" target="_blank">GitHub Repo</a>
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
-        <script>
-            // Typewriter animation for hero section
-            const phrases = [
-                "Hi, I am Jayden.",
-                "I'm a Web Designer.",
-                "I'm a Soldier.",
-                "I'm a Student."
-            ];
-            const el = document.getElementById('typewriter-text');
-            let phraseIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
-            let typingSpeed = 80;
-            let pauseTime = 1200;
 
-            function type() {
-                if (!el) return;
-                const currentPhrase = phrases[phraseIndex];
-                if (isDeleting) {
-                    el.textContent = currentPhrase.substring(0, charIndex - 1);
-                    charIndex--;
-                    if (charIndex === 0) {
-                        isDeleting = false;
-                        phraseIndex = (phraseIndex + 1) % phrases.length;
-                        setTimeout(type, 400);
-                        return;
-                    }
-                } else {
-                    el.textContent = currentPhrase.substring(0, charIndex + 1);
-                    charIndex++;
-                    if (charIndex === currentPhrase.length) {
-                        isDeleting = true;
-                        setTimeout(type, pauseTime);
-                        return;
-                    }
-                }
-                setTimeout(type, isDeleting ? 40 : typingSpeed);
-            }
-            type();
-        </script>
+    <section id="gallery" class="scroll-reveal">
+        <h2>Gallery</h2>
+        <div class="photo-gallery">
+            <div class="photo-item"><img src="images/photo1.jpg" alt="Photo 1"></div>
+            <div class="photo-item"><img src="images/photo2.jpg" alt="Photo 2"></div>
+        </div>
+    </section>
+
+    <section id="resume" class="scroll-reveal">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>Download My Resume</a>
+    </section>
+
+    <section id="contact" class="scroll-reveal">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:jaydenazore918@gmail.com">jaydenazore918@gmail.com</a></p>
+        <p>Phone: <a href="tel:+18624620446">+1 (862) 462-0446</a></p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
