@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senior Portfolio</title>
+    <title>Senior Portfolio | Jayden Azore</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold" href="index.html">Jayden Azore</a>
@@ -21,15 +22,64 @@
                     <li class="nav-item"><a class="nav-link" href="edu.html">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
                     <li class="nav-item"><a class="nav-link" href="interests.html">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contract.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm Jayden Azore , a passionate learner and aspiring professional. Explore my journey below.</p>
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="text-center text-light d-flex flex-column justify-content-center align-items-center" style="height: 100vh; background: linear-gradient(to right, #0d6efd, #6610f2);">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Welcome to My Portfolio</h1>
+            <p class="lead mb-4">Hello! I'm <strong>Jayden Azore</strong> — a passionate student, creative thinker, and aspiring professional.  
+                This portfolio showcases my growth, achievements, and interests throughout my senior year.</p>
+            <a href="about.html" class="btn btn-light btn-lg mt-3 shadow-sm">Learn More About Me</a>
+        </div>
     </section>
+
+    <!-- Quick Overview Section -->
+    <section id="overview" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Explore My Journey</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Education</h5>
+                            <p class="card-text">Discover where I studied, the skills I developed, and how my academic journey shaped who I am today.</p>
+                            <a href="edu.html" class="btn btn-outline-primary">View Education</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Work Experience</h5>
+                            <p class="card-text">Take a look at my professional experiences, internships, and volunteer work that helped me grow.</p>
+                            <a href="work.html" class="btn btn-outline-primary">View Work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Personal Interests</h5>
+                            <p class="card-text">Learn more about my passions — from technology and art to sports and creative writing.</p>
+                            <a href="interests.html" class="btn btn-outline-primary">View Interests</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2025 Jayden Azore | Senior Portfolio Project</p>
+    </footer>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

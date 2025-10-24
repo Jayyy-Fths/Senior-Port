@@ -8,6 +8,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
 		<div class="container-fluid">
 			<a class="navbar-brand fw-bold" href="index.html">Jayden Azore</a>
@@ -21,320 +22,128 @@
 					<li class="nav-item"><a class="nav-link" href="edu.html">Education</a></li>
 					<li class="nav-item"><a class="nav-link active" aria-current="page" href="work.html">Work</a></li>
 					<li class="nav-item"><a class="nav-link" href="interests.html">Interests</a></li>
-					<li class="nav-item"><a class="nav-link" href="contract.html">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<section class="hero">
-		<div class="hero-content">
-			<div>
-				<h1>Work</h1>
+
+	<!-- Hero -->
+	<section class="py-5 text-center bg-primary text-white">
+		<div class="container">
+			<h1 class="display-5 fw-bold">My Work</h1>
+			<p class="lead mb-0">A showcase of my projects, artwork, and photography</p>
+		</div>
+	</section>
+
+	<!-- Projects Section -->
+	<section id="projects" class="py-5 bg-light">
+		<div class="container">
+			<h2 class="text-center fw-bold mb-5">Projects</h2>
+			<div class="row g-4">
+				<!-- Example Project Card -->
+				<div class="col-md-4 col-sm-6">
+					<div class="card shadow-sm h-100">
+						<img src="imgs/ANVIL-01.png" class="card-img-top" alt="Fank Project Screenshot">
+						<div class="card-body">
+							<h5 class="card-title">Fank</h5>
+							<p class="card-text">A project we worked on during a coding competition.</p>
+							<a href="https://github.com/Jayyy-Fths/Fank" target="_blank" class="btn btn-outline-primary btn-sm">View GitHub</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Add your other projects -->
+				<div class="col-md-4 col-sm-6">
+					<div class="card shadow-sm h-100">
+						<img src="imgs/ANVIL-02.png" class="card-img-top" alt="Project 2 Screenshot">
+						<div class="card-body">
+							<h5 class="card-title">Project Title 2</h5>
+							<p class="card-text">Short description of your second project.</p>
+							<a href="#" target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="card shadow-sm h-100">
+						<img src="imgs/ANVIL-03.png" class="card-img-top" alt="Project 3 Screenshot">
+						<div class="card-body">
+							<h5 class="card-title">Project Title 3</h5>
+							<p class="card-text">Short description of your third project.</p>
+							<a href="#" target="_blank" class="btn btn-outline-primary btn-sm">View Project</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Add more cards as needed -->
 			</div>
 		</div>
 	</section>
 
-	<section id="projects" class="scroll-reveal">
-		<h2>Projects</h2>
-		<div class="projects-list">
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-01.png" alt="Fank Project Screenshot" />
+	<!-- Artwork Section -->
+	<section id="artwork" class="py-5">
+		<div class="container">
+			<h2 class="text-center fw-bold mb-5">Art Work</h2>
+			<div class="row g-4">
+				<!-- Art Card Example -->
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow-sm h-100">
+						<img src="imgs/Luca.png" class="card-img-top" alt="Art 3">
+						<div class="card-body text-center">
+							<p class="card-text fw-semibold">Art Title 1</p>
+						</div>
+					</div>
 				</div>
-				<div class="project-info">
-					<h3>Fank</h3>
-					<p class="description">A project we worked on during a coding competition.</p>
-					<a href="https://github.com/Jayyy-Fths/Fank" target="_blank">GitHub Repo</a>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow-sm h-100">
+						<img src="imgs/ANVIL-06.png" class="card-img-top" alt="Art 2">
+						<div class="card-body text-center">
+							<p class="card-text fw-semibold">Art Title 2</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-02.png" alt="Project 2 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 2</h3>
-					<p class="description">Short description of your second project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-03.png" alt="Project 3 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 3</h3>
-					<p class="description">Short description of your third project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-04.png" alt="Project 4 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 4</h3>
-					<p class="description">Short description of your fourth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-05.png" alt="Project 5 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 5</h3>
-					<p class="description">Short description of your fifth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-06.png" alt="Project 6 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 6</h3>
-					<p class="description">Short description of your sixth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-07.png" alt="Project 7 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 7</h3>
-					<p class="description">Short description of your seventh project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-08.png" alt="Project 8 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 8</h3>
-					<p class="description">Short description of your eighth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-09.png" alt="Project 9 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 9</h3>
-					<p class="description">Short description of your ninth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-10.png" alt="Project 10 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 10</h3>
-					<p class="description">Short description of your tenth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/ANVIL-11.png" alt="Project 11 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 11</h3>
-					<p class="description">Short description of your eleventh project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/F100-01.png" alt="Project 12 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 12</h3>
-					<p class="description">Short description of your twelfth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/F100-02.png" alt="Project 13 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 13</h3>
-					<p class="description">Short description of your thirteenth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/TREADWELL1.png" alt="Project 14 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 14</h3>
-					<p class="description">Short description of your fourteenth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/TREADWELL2.png" alt="Project 15 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 15</h3>
-					<p class="description">Short description of your fifteenth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="project-image">
-					<img src="imgs/TREADWELL3.png" alt="Project 16 Screenshot" />
-				</div>
-				<div class="project-info">
-					<h3>Project Title 16</h3>
-					<p class="description">Short description of your sixteenth project.</p>
-					<a href="#" target="_blank">Project Link</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	</section>
-	<section id="artwork" class="scroll-reveal">
-		<h2>Art Work</h2>
-		<div class="artwork-gallery">
-			<div class="art-item">
-				<img src="imgs/ANVIL-05.png" alt="Art 1" />
-				<p class="caption">Art Title 1</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/ANVIL-06.png" alt="Art 2" />
-				<p class="caption">Art Title 2</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/Luca.png" alt="Art 3" />
-				<p class="caption">Art Title 3</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/ANVIL-07.png" alt="Art 4" />
-				<p class="caption">Art Title 4</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/ANVIL-08.png" alt="Art 5" />
-				<p class="caption">Art Title 5</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/ANVIL-09.png" alt="Art 6" />
-				<p class="caption">Art Title 6</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/ANVIL-10.png" alt="Art 7" />
-				<p class="caption">Art Title 7</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/ANVIL-11.png" alt="Art 8" />
-				<p class="caption">Art Title 8</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/F100-01.png" alt="Art 9" />
-				<p class="caption">Art Title 9</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/F100-02.png" alt="Art 10" />
-				<p class="caption">Art Title 10</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/TREADWELL1.png" alt="Art 11" />
-				<p class="caption">Art Title 11</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/TREADWELL2.png" alt="Art 12" />
-				<p class="caption">Art Title 12</p>
-			</div>
-			<div class="art-item">
-				<img src="imgs/TREADWELL3.png" alt="Art 13" />
-				<p class="caption">Art Title 13</p>
+
+				<!-- Add more art cards -->
 			</div>
 		</div>
 	</section>
 
-	<section id="photos" class="scroll-reveal">
-		<h2>Photos</h2>
-		<div class="photo-gallery">
-			<div class="photo-item">
-				<img src="imgs/Face-shot.png" alt="Photo 1" />
-				<p class="caption">Photo Title 1</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-09.png" alt="Photo 2" />
-				<p class="caption">Photo Title 2</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/HAMMER1.png" alt="Photo 3" />
-				<p class="caption">Photo Title 3</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-01.png" alt="Photo 4" />
-				<p class="caption">Photo Title 4</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-02.png" alt="Photo 5" />
-				<p class="caption">Photo Title 5</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-03.png" alt="Photo 6" />
-				<p class="caption">Photo Title 6</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-04.png" alt="Photo 7" />
-				<p class="caption">Photo Title 7</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-05.png" alt="Photo 8" />
-				<p class="caption">Photo Title 8</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-06.png" alt="Photo 9" />
-				<p class="caption">Photo Title 9</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-07.png" alt="Photo 10" />
-				<p class="caption">Photo Title 10</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-08.png" alt="Photo 11" />
-				<p class="caption">Photo Title 11</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-10.png" alt="Photo 12" />
-				<p class="caption">Photo Title 12</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/ANVIL-11.png" alt="Photo 13" />
-				<p class="caption">Photo Title 13</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/F100-01.png" alt="Photo 14" />
-				<p class="caption">Photo Title 14</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/F100-02.png" alt="Photo 15" />
-				<p class="caption">Photo Title 15</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/TREADWELL1.png" alt="Photo 16" />
-				<p class="caption">Photo Title 16</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/TREADWELL2.png" alt="Photo 17" />
-				<p class="caption">Photo Title 17</p>
-			</div>
-			<div class="photo-item">
-				<img src="imgs/TREADWELL3.png" alt="Photo 18" />
-				<p class="caption">Photo Title 18</p>
+	<!-- Photos Section -->
+	<section id="photos" class="py-5 bg-light">
+		<div class="container">
+			<h2 class="text-center fw-bold mb-5">Photos</h2>
+			<div class="row g-4">
+				<!-- Photo Example -->
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow-sm h-100">
+						<img src="imgs/Face-shot.png" class="card-img-top" alt="Photo 1">
+						<div class="card-body text-center">
+							<p class="card-text fw-semibold">Photo Title 1</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow-sm h-100">
+						<img src="imgs/ANVIL-09.png" class="card-img-top" alt="Photo 2">
+						<div class="card-body text-center">
+							<p class="card-text fw-semibold">Photo Title 2</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Add more photo cards -->
 			</div>
 		</div>
 	</section>
+
+	<!-- Footer -->
+	<footer class="bg-dark text-white text-center py-3 mt-5">
+		<p class="mb-0">© 2025 Jayden Azore | Senior Portfolio</p>
+	</footer>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-	</body>
+</body>
 </html>
